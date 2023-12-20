@@ -1,17 +1,10 @@
-
-from conf import LOG_LEVEL, LOG_DIR
-
 import os
 import logging
 import logging.handlers
 from concurrent_log_handler import ConcurrentTimedRotatingFileHandler
 from typing import TYPE_CHECKING
 from colorlog import ColoredFormatter
-
-# if TYPE_CHECKING:
-#     from tradepy.core.order import Order
-#     from tradepy.core.position import Position
-
+from conf import LOG_LEVEL, LOG_DIR
 
 LOG_DIR = os.path.expanduser("~/tiger_quant/logs")
 LOG_FILENAME = os.path.join(LOG_DIR, "tiger_quant.log")

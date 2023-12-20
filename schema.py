@@ -1,8 +1,15 @@
 import os 
-from conf import DATA_PATH
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker 
 from sqlalchemy.orm import DeclarativeMeta
+
+from os import path as ospath 
+from sys import path as syspath 
+# path = ospath.dirname(ospath.abspath(__file__))
+
+# syspath.append(path)
+# print
+from tiger_quant.conf import DATA_PATH
 
 __engine_map = {}
 __session_map = {} 

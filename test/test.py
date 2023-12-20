@@ -7,3 +7,7 @@ class A:
 a = A()
 a._add(1, 2)
 
+
+import tradepy 
+
+
